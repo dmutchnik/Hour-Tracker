@@ -1,0 +1,103 @@
+<template>
+    <lightning-card class="card-container">
+        <div class="form-container">
+            <h2 class="form-title">Log Your Hours</h2>
+            <lightning-input 
+                type="date" 
+                label="Select Sunday Date" 
+                value={sundayDate} 
+                onchange={handleDateChange} 
+                required>
+            </lightning-input>
+
+            <template if:true={showTable}>
+                <lightning-layout multiple-rows>
+                    <lightning-layout-item padding="around-small">
+                        <lightning-input 
+                            type="number" 
+                            label="Sunday" 
+                            data-id="sunday" 
+                            value={sundayHours} 
+                            onchange={handleInputChange}
+                            class="input-field"
+                            step="0.1">
+                        </lightning-input>
+                    </lightning-layout-item>
+                    <lightning-layout-item padding="around-small">
+                        <lightning-input 
+                            type="number" 
+                            label="Monday" 
+                            data-id="monday" 
+                            value={mondayHours} 
+                            onchange={handleInputChange}
+                            class="input-field"
+                            step="0.1">
+                        </lightning-input>
+                    </lightning-layout-item>
+                    <lightning-layout-item padding="around-small">
+                        <lightning-input 
+                            type="number" 
+                            label="Tuesday" 
+                            data-id="tuesday" 
+                            value={tuesdayHours} 
+                            onchange={handleInputChange}
+                            class="input-field"
+                            step="0.1">
+                        </lightning-input>
+                    </lightning-layout-item>
+                    <lightning-layout-item padding="around-small">
+                        <lightning-input 
+                            type="number" 
+                            label="Wednesday" 
+                            data-id="wednesday" 
+                            value={wednesdayHours} 
+                            onchange={handleInputChange}
+                            class="input-field"
+                            step="0.1">
+                        </lightning-input>
+                    </lightning-layout-item>
+                    <lightning-layout-item padding="around-small">
+                        <lightning-input 
+                            type="number" 
+                            label="Thursday" 
+                            data-id="thursday" 
+                            value={thursdayHours} 
+                            onchange={handleInputChange}
+                            class="input-field"
+                            step="0.1">
+                        </lightning-input>
+                    </lightning-layout-item>
+                    <lightning-layout-item padding="around-small">
+                        <lightning-input 
+                            type="number" 
+                            label="Friday" 
+                            data-id="friday" 
+                            value={fridayHours} 
+                            onchange={handleInputChange}
+                            class="input-field"
+                            step="0.1">
+                        </lightning-input>
+                    </lightning-layout-item>
+                    <lightning-layout-item padding="around-small">
+                        <lightning-input 
+                            type="number" 
+                            label="Saturday" 
+                            data-id="saturday" 
+                            value={saturdayHours} 
+                            onchange={handleInputChange}
+                            class="input-field"
+                            step="0.1">
+                        </lightning-input>
+                    </lightning-layout-item>
+                </lightning-layout>
+            </template>
+        </div>
+
+        <lightning-button 
+            variant="brand" 
+            label="Submit" 
+            onclick={handleSubmit}
+            class="submit-button">
+        </lightning-button>
+    </lightning-card>
+</template>

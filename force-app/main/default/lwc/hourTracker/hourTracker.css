@@ -1,0 +1,35 @@
+.card-container {
+    margin-top: 0rem;
+}
+
+.form-container {
+    padding: 1rem;
+}
+
+.form-title {
+    margin-bottom: 0.5rem; 
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.input-field {
+    margin-bottom: 1rem;
+}
+
+.submit-button {
+    margin-left: 1rem;
+    margin-top: 5 rem;
+    background-color: #0070f3;
+    color: white;
+    font-weight: bold;
+}
+
+.submit-button:hover {
+    background-color: #0056b3; /* Darken on hover */
+}
+
+.lightning-card {
+    border: 1px solid #d8dde6;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}

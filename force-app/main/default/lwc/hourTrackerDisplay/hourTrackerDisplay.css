@@ -1,0 +1,26 @@
+.lightning-card h2 {
+    margin-bottom: 0.5rem;
+}
+
+.lightning-card {
+    border: 1px solid #d8dde6;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.lightning-datatable {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.lightning-datatable .slds-table {
+    margin: 0;
+}
+
+.lightning-datatable .slds-table__header {
+    height: auto;
+}
+
+.lightning-datatable .slds-table__row {
+    height: auto;
+}
